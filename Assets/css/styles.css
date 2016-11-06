@@ -61,6 +61,14 @@ p {
 	bottom: 2em;
 }
 
+#secondNav2 {
+	display: block;
+	background-color: #fff;
+	height: 3.5em;
+	position: relative;
+	bottom: 2em;
+}
+
 #WD {
 	color: #AAB1BC;
 	opacity: .5;
@@ -184,7 +192,7 @@ h1:hover {
 }
 
 #target1 {
-	margin-top: -4em;
+	
 	max-width: 100%;
 	height: 100%;
 	background-color: red;

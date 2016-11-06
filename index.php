@@ -38,20 +38,15 @@
 			</div>
 
 				<div class="target1"></div>
+				<div class="target2"></div>
 
 		<div class="row">
 			<h1 id="GDbox">Graphic Design</h1>
 		</div>
 
 		<div class="row">
-			<h1>Web Development</h1>
+			<h1 id="WDbox">Web Development</h1>
 		</div>	
-
-		<div class="row text-center">
-			<a class="test" href="#">test</a>
-		</div>	
-
-
 	</body>
 
 	<script type="text/javascript" src="Assets/js/jquery-1.11.3.min.js"></script>

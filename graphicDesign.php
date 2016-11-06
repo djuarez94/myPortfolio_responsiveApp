@@ -10,28 +10,16 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body>
-		<nav class="navbar navbar-default" id="mainNav">
-  				<div class="navbar-header navbar-inverse">
-      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-      				</button>
-      			</div>
-
-    			<div class="collapse navbar-collapse navbar-inverse"  id="myNavbar">
-				      <ul class="nav navbar-nav" >				    
-				        <li class="text-center"><a href="#"><img src="Assets/img/Logo/topHalf_Logo.png"  alt=""></a></li>			
-				      </ul>
-				</div>
-			</nav>
-
-			<div class="row text-center" id ="secondNav">
-				<a id="GD" href="graphicDesign.php">Graphic Design</a>
+			<div class="row text-center" id ="secondNav2">
+				<a id="GD" href="#">Graphic Design</a>
 				<a id="WD" href="#">Web Development</a>
 			</div>
-		<div class="parallax"></div>
-
+			<div class="target3"></div>
+		<div class="parallax text-center">
+			<h3 id="parallaxTextTitle">
+				Graphic Design
+			</h3>
+		</div>
 		<div class="row" id="aboutMe">
 			<div class="text-center">
 				<img id="myPhoto" src="Assets/img/myPhoto.jpg" width="290px" alt="">
