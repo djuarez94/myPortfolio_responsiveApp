@@ -25,20 +25,14 @@
 				      </ul>
 				</div>
 			</nav>
-
-			<div class="row text-center" id="greeting">
-				<h2>Where Design </br> and Development meet!</h2>
-			</div>
-
-			
-			
-			<div class="row text-center" id ="secondNav">
+			<div class="row text-center" id ="secondNav2">
 				<a id="GD" href="#">Graphic Design</a>
 				<a id="WD" href="#">Web Development</a>
 			</div>
 
-				<div class="target1"></div>
-				<div class="target2"></div>
+			<div class="row text-center" id="greeting">
+				<h2>Where Design </br> and Development meet!</h2>
+			</div>
 
 		<div class="row">
 			<h1 id="GDbox">Graphic Design</h1>
@@ -47,6 +41,8 @@
 		<div class="row">
 			<h1 id="WDbox">Web Development</h1>
 		</div>	
+		<div class="target1"></div>
+		<div class="target2"></div>
 	</body>
 
 	<script type="text/javascript" src="Assets/js/jquery-1.11.3.min.js"></script>

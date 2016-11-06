@@ -10,11 +10,12 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body>
-			<div class="row text-center" id ="secondNav2">
+			<!-- <div class="row text-center" id ="secondNav2">
 				<a id="GD" href="#">Graphic Design</a>
 				<a id="WD" href="#">Web Development</a>
-			</div>
+			</div> -->
 			<div class="target3"></div>
+			<div class="target4"></div>
 		<div class="parallax text-center">
 			<h3 id="parallaxTextTitle">
 				Graphic Design
