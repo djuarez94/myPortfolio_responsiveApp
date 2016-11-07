@@ -3,16 +3,16 @@ $(document).ready(function() {
 	/*-------------------------------------
 	| Hide Blue Div's
 	-------------------------------------*/
-	$('h1').hide();
+	// $('h1').hide();
 
-	function showSecNav () {
-		$('#secondNav').show();
-	}
+	// function showSecNav () {
+	// 	$('#secondNav').show();
+	// }
 
-	$('#GD').click(showSecNav);
-	/*-------------------------------------
-	| Show & Hide Greet | Blue Div's Appear
-	-------------------------------------*/
+	// $('#GD').click(showSecNav);
+	// /*-------------------------------------
+	// | Show & Hide Greet | Blue Div's Appear
+	// -------------------------------------*/
 	$('h2').animate({opacity : '1'},"slow",dissappearGreet);
 
 	function dissappearGreet () {
@@ -23,38 +23,40 @@ $(document).ready(function() {
 		$('h2').hide();
 		$('h1').show();
 	}
-	/*-------------------------------------
-	| Second Nav Slides After Blue Div Click
-	-------------------------------------*/
-	function mainNavToggle () {
-		$('#secondNav').slideDown("slow");
-		$('h1').hide();
-	}
+	// /*-------------------------------------
+	// | Second Nav Slides After Blue Div Click
+	// -------------------------------------*/
+	// function mainNavToggle () {
+	// 	$('#secondNav').slideDown("slow");
+	// 	$('h1').hide();
+	// }
 	// $('h1').click(mainNavToggle);
 
 	/*-------------------------------------
 	| Ajax
 	-------------------------------------*/
 
-//   function ajax_graphicDesign(event) {
-//     event.preventDefault();
+  function ajax_graphicDesign(event) {
+    event.preventDefault();
 
-//     $('div.target1').stop(true).load('graphicDesign.php');
-//     $('#GDbox').hide();
-//     $('#WDbox').hide();
-// }
+    $('div.target1').stop(true).load('graphicDesign.php');
+    $('#GDbox').hide();
+    $('#WDbox').hide();
+    $('#mainNav1').hide();
+}
 
-// $('#GDbox').click(ajax_graphicDesign);
+$('#GDbox').click(ajax_graphicDesign);
 
-// function ajax_webDevelopment(event) {
-//     event.preventDefault();
+function ajax_webDevelopment(event) {
+    event.preventDefault();
 
-//     $('div.target2').stop(true).load('webDevelopment.php');
-//     $('#GDbox').hide();
-//     $('#WDbox').hide();
-// }
+    $('div.target2').stop(true).load('webDevelopment.php');
+    $('#GDbox').hide();
+    $('#WDbox').hide();
+    $('#mainNav1').hide();
+}
 
-// $('#WDbox').click(ajax_webDevelopment);
+$('#WDbox').click(ajax_webDevelopment);
 
 
 });

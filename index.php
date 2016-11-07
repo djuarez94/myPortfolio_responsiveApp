@@ -10,7 +10,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body>
-			<nav class="navbar navbar-default" id="mainNav">
+			<nav class="navbar navbar-default" id="mainNav1">
   				<div class="navbar-header navbar-inverse">
       				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         				<span class="icon-bar"></span>
@@ -25,10 +25,10 @@
 				      </ul>
 				</div>
 			</nav>
-			<div class="row text-center" id ="secondNav2">
+			<!-- <div class="row text-center" id ="secondNav2">
 				<a id="GD" href="graphicDesign.php">Graphic Design</a>
 				<a id="WD" href="webDevelopment.php">Web Development</a>
-			</div>
+			</div> -->
 
 			<div class="row text-center" id="greeting">
 				<h2>Where Design </br> and Development meet!</h2>
