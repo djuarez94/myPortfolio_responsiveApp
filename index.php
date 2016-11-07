@@ -26,8 +26,8 @@
 				</div>
 			</nav>
 			<div class="row text-center" id ="secondNav2">
-				<a id="GD" href="#">Graphic Design</a>
-				<a id="WD" href="#">Web Development</a>
+				<a id="GD" href="graphicDesign.php">Graphic Design</a>
+				<a id="WD" href="webDevelopment.php">Web Development</a>
 			</div>
 
 			<div class="row text-center" id="greeting">

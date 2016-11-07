@@ -1,20 +1,15 @@
 $(document).ready(function() {
-	$('#secondNav2').hide();
-
-	// function showSecondNav () {
-	// 	$('#secondNav2').show();
-	// }
-
+	$('#secondNav').hide();
 	/*-------------------------------------
 	| Hide Blue Div's
 	-------------------------------------*/
 	$('h1').hide();
 
-	// function showSecNav () {
-	// 	$('#secondNav').show();
-	// }
+	function showSecNav () {
+		$('#secondNav').show();
+	}
 
-	// $('#GD').click(showSecNav);
+	$('#GD').click(showSecNav);
 	/*-------------------------------------
 	| Show & Hide Greet | Blue Div's Appear
 	-------------------------------------*/
@@ -25,68 +20,41 @@ $(document).ready(function() {
 	}
 
 	function showBoxes () {
-		$('h2').toggleClass('hidden');
+		$('h2').hide();
 		$('h1').show();
 	}
 	/*-------------------------------------
 	| Second Nav Slides After Blue Div Click
 	-------------------------------------*/
-	// function mainNavToggle () {
-	// 	$('#secondNav').slideDown("slow");
-	// 	$('h1').hide();
-	// }
+	function mainNavToggle () {
+		$('#secondNav').slideDown("slow");
+		$('h1').hide();
+	}
 	// $('h1').click(mainNavToggle);
 
 	/*-------------------------------------
 	| Ajax
 	-------------------------------------*/
-function ajaxTest1 () {
-	$('div.target1').stop(true).load('graphicDesign.php');
-}
 
-function ajax_graphicDesign(event) {
-    event.preventDefault();
-    $('h1').hide();
-    // $('div.target1').stop(true).load('graphicDesign.php');
-    $('div.target2').hide();
-}
-
-$('#GDbox').click(ajax_graphicDesign);
-// $('#GDbox').click(showSecondNav);
-$('#GDbox').click(ajaxTest1);
-
-function ajax_webDevelopment(event) {
-    event.preventDefault();
-    $('h1').hide();
-    // $('div.target2').stop(true).load('webDevelopment.php');
-    $('div.target1').hide();
-}
-
-function ajaxTest2 () {
-	$('div.target2').stop(true).load('webDevelopment.php');
-}
-
-$('#WDbox').click(ajax_webDevelopment);
-// $('#WDbox').click(showSecondNav);
-$('#WDbox').click(ajaxTest);
-
-
-/*-------------------------------------
-| Second Nav Ajax
--------------------------------------*/
-// function ajax_webDevelopment2(event) {
+//   function ajax_graphicDesign(event) {
 //     event.preventDefault();
 
-//     $('div.target3').stop(true).load('webDevelopment.php');
+//     $('div.target1').stop(true).load('graphicDesign.php');
+//     $('#GDbox').hide();
+//     $('#WDbox').hide();
 // }
-// $('#secondNav2 a #WD').click(ajax_webDevelopment2);
 
-// function ajax_graphicDesign2(event) {
+// $('#GDbox').click(ajax_graphicDesign);
+
+// function ajax_webDevelopment(event) {
 //     event.preventDefault();
 
-//     $('div.target4').stop(true).load('graphic Design.php');
+//     $('div.target2').stop(true).load('webDevelopment.php');
+//     $('#GDbox').hide();
+//     $('#WDbox').hide();
 // }
 
-// $('#secondNav2 a #GD').click(ajax_graphicDesign2);
+// $('#WDbox').click(ajax_webDevelopment);
+
 
 });
