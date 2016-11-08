@@ -50,7 +50,7 @@
 					Web Developer
 				</h3>
 
-				<p>
+				<p class="star">
 					Welcome! I am David, and I am beginning my senior year at Mt. Sierra College where I am persuing my Bachelor's Degree in Graphic Design. What made me go down the road of a Graphic Designer was my love for drawing. I began drawing from a young age and this eventually evolved into becoming a hobby that I love to do. Now I want to use my passion for drawing in order to communicate with others visually through my work.
 				</p>										
 			</div>
@@ -66,16 +66,16 @@
 					Digital Painting
 				</h3>
 			</div>
-				<div class="col-md-3 text-center" id="workImages">
+				<div class="col-md-3 text-center star" id="workImages">
 					<img src="Assets/img/cupPainting/Still Life_new.jpg" alt="">
 				</div>
-				<div class="col-md-3 text-center" id="workImages">
+				<div class="col-md-3 text-center star" id="workImages">
 					<img src="Assets/img/limePainting/DES230_DavidJuare_Wk7_StillLife_new.jpg" alt="">
 				</div>
-				<div class="col-md-3 text-center" id="salmaHayek">
+				<div class="col-md-3 text-center star" id="salmaHayek">
 					<img src="Assets/img/salmaHayek/DES231_DJuarez_PortaitPainting_Wk06-1_new.jpg" alt="">
 				</div>
-				<div class="col-md-3 text-center" id="workImages">
+				<div class="col-md-3 text-center star" id="workImages">
 					<img src="Assets/img/skullPainting/DES231_DJuarez_ExeSkullPainting_Wk04_R1_new.jpg" alt="">
 				</div>
 		</div>
@@ -88,10 +88,10 @@
 					</h3>
 				</h3>
 			</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/illustrations/robotBody copy_new.png" alt="">
 				</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/illustrations/robotHead_new.png" alt="">
 				</div>
 		</div>
@@ -104,10 +104,10 @@
 					</h3>
 				</h3>
 			</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/posters/DES231_DJuarez_Movie Poster_new.jpg" alt="">
 				</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/posters/musicPoster_new.jpg" alt="">
 				</div>
 		</div>
@@ -120,10 +120,10 @@
 					</h3>
 				</h3>
 			</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/interactiveDesign/appScreens_1_new.jpg" alt="">
 				</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/interactiveDesign/appScreens_2_new.jpg" alt="">
 				</div>
 		</div>
@@ -136,10 +136,10 @@
 					</h3>
 				</h3>
 			</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/logos&Branding/goSip_logo copy_new.png" alt="">
 				</div>
-				<div class="col-md-6 text-center" id="workImages">
+				<div class="col-md-6 text-center star" id="workImages">
 					<img src="Assets/img/logos&Branding/logoPackaging copy_new.png" alt="">
 				</div>
 		</div>

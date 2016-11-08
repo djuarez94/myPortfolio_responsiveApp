@@ -51,7 +51,7 @@
 					Web Developer
 				</h3>
 
-				<p>
+				<p class="star">
 					My time at Mt. Sierra College has also introduced me to web design and computer programming. Ever since I got my hands wet in the design and programming fields, I have become increasingly attached to my work. I have a constant thirst to learn as much as I can about computer programming/web design.
 				</p>										
 			</div>
@@ -68,7 +68,7 @@
 					Positive Quote Machine Generator
 				</h3>
 			</div>
-				<div class="text-center" id="workImages">
+				<div class="text-center star" id="workImages">
 					<a href="https://djuarez94.github.io/randomQuoteMachine/"><img src="Assets/img/frontEndProj/positivequotemachine_ss-u75197-fr.jpg" alt=""></a>
 				</div>
 				
