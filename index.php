@@ -10,20 +10,24 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body>
-			<nav class="navbar navbar-default" id="mainNav1">
-  				<div class="navbar-header navbar-inverse">
-      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-      				</button>
-      			</div>
-
-    			<div class="collapse navbar-collapse navbar-inverse"  id="myNavbar">
-				      <ul class="nav navbar-nav" >				    
-				        <li class="text-center"><a href="#"><img src="Assets/img/Logo/topHalf_Logo.png"  alt=""></a></li>			
-				      </ul>
-				</div>
+			<nav class="navbar navbar-inverse" id="mainNav1">
+  				<div class="container-fluid">
+   					 <div class="navbar-header">
+      					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span> 
+      					</button>
+      					<a class="navbar-brand" href="index.php"><img src="Assets/img/Logo/topHalf_Logo.png" alt=""></a>
+    				</div>
+    				<div class="collapse navbar-collapse" id="myNavbar">
+				     	<ul class="nav navbar-nav">
+				        	<li class="active"><a href="#aboutMe">About Me</a></li>
+				        	<li><a href="#myWork">My Work</a></li> 
+				        	<li><a href="#contactMe">Contact Me</a></li> 
+				     	</ul>
+    				</div>
+  				</div>
 			</nav>
 			<!-- <div class="row text-center" id ="secondNav2">
 				<a id="GD" href="graphicDesign.php">Graphic Design</a>
