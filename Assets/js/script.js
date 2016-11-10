@@ -11,31 +11,4 @@ $(document).ready(function() {
 		$('h2').hide();
 		$('h1').show();
 	}
-/*-------------------------------------
-| Ajax
--------------------------------------*/
-
-  function ajax_graphicDesign(event) {
-    event.preventDefault();
-
-    $('div.target1').stop(true).load('graphicDesign.php');
-    $('#GDbox').hide();
-    $('#WDbox').hide();
-    $('#mainNav1').hide();
-}
-
-$('#GDbox').click(ajax_graphicDesign);
-
-function ajax_webDevelopment(event) {
-    event.preventDefault();
-
-    $('div.target2').stop(true).load('webDevelopment.php');
-    $('#GDbox').hide();
-    $('#WDbox').hide();
-    $('#mainNav1').hide();
-}
-
-$('#WDbox').click(ajax_webDevelopment);
-
-
 });

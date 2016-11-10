@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="Assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -58,7 +59,7 @@
 		</div>
 
 		<div class="parallax2 text-center" id="myWork">
-			<h3 id="parallaxTextTitle">
+			<h3 id="parallaxTextTitle2">
 				My Work
 			</h3>
 		</div>
@@ -75,7 +76,7 @@
 		</div>
 
 		<div class="parallax2 text-center" id="contactMe">
-			<h3 id="parallaxTextTitle">
+			<h3 id="parallaxTextTitle2">
 				Contact  Me
 			</h3>
 		</div>
@@ -101,6 +102,11 @@
   				</div>
   				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
+		</div>
+		<div class="row text-center">
+			<a href="https://www.linkedin.com/in/david-juarez-915270117" target="_blank"><i id='socialIcons' class="fa fa-linkedin-square" style="color:#83848B; font-size: 3em; opacity: .5;"></i></a>
+			<a href="https://www.freecodecamp.com/djuarez94" target="_blank"><i id='socialIcons' class="fa fa-free-code-camp" aria-hidden="true" style="padding-right: .25em; padding-left: .25em; color:#83848B; font-size: 3em; opacity: .5;"></i></a>
+			<a href="https://github.com/djuarez94" target="_blank"><i id='socialIcons' class="fa fa-github-square" style="font-size:3em; color:#83848B; opacity: .5;"></i></a>
 		</div>
 
 

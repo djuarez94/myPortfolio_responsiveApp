@@ -39,11 +39,11 @@
 			</div>
 
 		<div class="row">
-			<h1 id="GDbox">Graphic Design</h1>
+			<a href="graphicDesign.php"><h1 id="GDbox">Graphic Design</h1></a>
 		</div>
 
 		<div class="row">
-			<h1 id="WDbox">Web Development</h1>
+			<a href="webDevelopment.php"><h1 id="WDbox">Web Development</h1></a>
 		</div>	
 		<div class="target1"></div>
 		<div class="target2"></div>

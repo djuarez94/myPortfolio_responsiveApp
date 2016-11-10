@@ -3,6 +3,10 @@ body,html {
 	height: 100%;
 }
 
+#socialIcons {
+	padding-bottom: .5em;
+}
+
 h1 {
 	background-color: #85D1E9;
 	text-align: center;
@@ -18,6 +22,10 @@ h1 {
 	margin-bottom : 0em;
 	margin-top : 1em;
 	display: none;
+}
+
+a:hover{
+	text-decoration: none;
 }
 
 #GDbox {
@@ -91,6 +99,7 @@ p {
 #WD:hover {
 	opacity: 1;
 	text-decoration: none;
+	border-bottom: none
 }
 
 #GD:hover {
@@ -184,6 +193,14 @@ nav {
 }
 
 #parallaxTextTitle {
+	font-size: 4em;
+	color: #D98E01;
+	padding-bottom: .5em;
+	padding-top: 3.5em;
+	text-shadow: 0px 5px 3px #000;
+}
+
+#parallaxTextTitle2 {
 	font-size: 4em;
 	color: #D98E01;
 	padding-bottom: .5em;

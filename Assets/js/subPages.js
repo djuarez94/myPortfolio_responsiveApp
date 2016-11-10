@@ -48,6 +48,45 @@ function showImages(el) {
     $(window).scroll(function() {
             showImages('.star');
     });
+/*-------------------------------------
+| Icon Mouse Over
+-------------------------------------*/
+
+//Linked In
+function mouseOverLinkedInIcon () {
+    $('.fa-linkedin-square').animate({opacity:1});
+}
+
+function mouseOutLinkedInIcon () {
+    $('.fa-linkedin-square').animate({opacity:.5});
+}
+
+$('.fa-linkedin-square').mouseover(mouseOverLinkedInIcon);
+$('.fa-linkedin-square').mouseout(mouseOutLinkedInIcon);
+
+//Git Hub
+function mouseOveGitIcon () {
+    $('.fa-github-square').animate({opacity:1});
+}
+
+function mouseOuGitIcon () {
+    $('.fa-github-square').animate({opacity:.5});
+}
+
+$('.fa-github-square').mouseover(mouseOveGitIcon);
+$('.fa-github-square').mouseout(mouseOuGitIcon);
+
+//FreeCodeCamp
+function mouseOvetFCCIcon () {
+    $('.fa-free-code-camp').animate({opacity:1});
+}
+
+function mouseOutFCCIcon () {
+    $('.fa-free-code-camp').animate({opacity:.5});
+}
+
+$('.fa-free-code-camp').mouseover(mouseOvetFCCIcon);
+$('.fa-free-code-camp').mouseout(mouseOutFCCIcon);
 
 
 
