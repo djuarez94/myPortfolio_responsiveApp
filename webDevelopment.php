@@ -32,7 +32,7 @@
 			</nav>
 			<div class="row text-center" id ="secondNav2">
 				<a id="GD" href="graphicDesign.php">Graphic Design</a>
-				<a id="WD" href="webDevelopment.php">Web Development</a>
+				<a class='active1' id="WD" href="webDevelopment.php">Web Development</a>
 			</div>
 		<div class="parallax text-center">
 			<h3 id="parallaxTextTitle">

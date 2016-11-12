@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	/*-------------------------------------
-	| Smooth Scroll
-	-------------------------------------*/
+/*-------------------------------------
+| Smooth Scroll
+-------------------------------------*/
 	function scrollMe () {
 	$('html,body').animate({
         scrollTop: $("#aboutMe").offset().top},
@@ -87,7 +87,40 @@ function mouseOutFCCIcon () {
 
 $('.fa-free-code-camp').mouseover(mouseOvetFCCIcon);
 $('.fa-free-code-camp').mouseout(mouseOutFCCIcon);
+/*-------------------------------------
+| Back to Top Button fadeIn & fadeOut
+-------------------------------------*/
+$('.back-to-top').css({'display': 'none'});
 
+var offset = 250;
+ 
+var duration = 300;
+ 
+$(window).scroll(function() {
+ 
+if ($(this).scrollTop() > offset) {
 
+$('a .back-to-top').fadeIn(duration);
+
+} else {
+ 
+$('a .back-to-top').fadeOut(duration);
+ 
+}
+ 
+});
+ 
+ 
+ 
+$('a .back-to-top').click(function(event) {
+ 
+event.preventDefault();
+ 
+$('html, body').animate({scrollTop: 0}, duration);
+ 
+return false;
+ 
+})
+ 
 
 });

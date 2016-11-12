@@ -1,3 +1,39 @@
+<?php
+	$to = "davidjuarez1411@gmail.com";
+	$subject = "Portfolio Contact";
+
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
+
+	$body = <<<EMAIL
+
+Hi! My name is $name and my subject is $subject.
+
+$message
+
+Sincerely,
+
+$name
+
+P.S. Oh yeah, my email is $email.
+
+EMAIL;
+
+$header = "From: " . $email;
+
+if ($_POST) {
+	if ($name == '' || $email == '' || $subject == '' || $message == '')
+	{
+		$feedback = 'Fill out all the fields';
+	} else {
+		mail($to, $subject, $body, $header);
+		$feedback = 'Hey, this is actually working!';
+	}
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,7 +67,7 @@
   				</div>
 			</nav>
 			<div class="row text-center" id ="secondNav2">
-				<a id="GD" href="graphicDesign.php">Graphic Design</a>
+				<a class='active1' id="GD" href="graphicDesign.php">Graphic Design</a>
 				<a id="WD" href="webDevelopment.php">Web Development</a>
 			</div>
 		<div class="parallax text-center">
@@ -152,25 +188,24 @@
 		</div>
 
 		<div class="row text-center">
-			<form class="form-horizontal  text-left">
+			<form method="post" action="?" class="form-horizontal  text-left">
 				<div class="form-group text-left">
    					<label for="name">Name:</label>
-    				<input type="name" class="form-control" id="name" placeholder= "Who will I be communicating with?">
+    				<input name="name" type="name" class="form-control" id="name" placeholder= "Who will I be communicating with?">
   				</div>
   				<div class="form-group text-left">
    					<label for="email">Email:</label>
-    				<input type="email" class="form-control" id="email" placeholder= "What is your email?">
+    				<input name="email" type="email" class="form-control" id="email" placeholder= "What is your email?">
   				</div>
   				<div class="form-group text-left">
-   					<label for="pwd">Subject:</label>
-    				<input type="password" class="form-control" id="pwd" placeholder= "What is your email about?">
+   					<label for="subject">Subject:</label>
+    				<input name="subject" type="text" class="form-control" id="subject" placeholder= "What is your email about?">
   				</div>
   				<div class="form-group text-left">
    					<label for="message">Message:</label>
-    				<!-- <input type="message" class="form-control" id="msg"> -->
-					<textarea id="message" name="message" disabled style="width:100%" placeholder= "Type message here..." ></textarea>	
+					<textarea rows="4" cols="50" id="message" name="message" style="width:100%" placeholder= "Type message here..." ></textarea>	
   				</div>
-  				<button type="submit" class="btn btn-default">Submit</button>
+  				<input id="button" type="submit" value="submit" name="submit">
 			</form>
 		</div>
 		<div class="row text-center">
@@ -178,7 +213,9 @@
 			<a href="https://www.freecodecamp.com/djuarez94" target="_blank" ><i id='socialIcons' class="fa fa-free-code-camp" aria-hidden="true" style="padding-right: .25em; padding-left: .25em; color:#83848B; font-size: 3em; opacity: .5;"></i></a>
 			<a href="https://github.com/djuarez94" target="_blank" ><i id='socialIcons' class="fa fa-github-square" style="font-size:3em; color:#83848B; opacity: .5;"></i></a>
 		</div>
-
+		<a href='#' class="back-to-top" style="display: inline;">
+			<i class="fa fa-arrow-circle-up"></i>
+		</a>
 	</body>
 
 	<script type="text/javascript" src="Assets/js/jquery-1.11.3.min.js"></script>
