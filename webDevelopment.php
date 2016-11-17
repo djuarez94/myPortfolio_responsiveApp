@@ -82,25 +82,24 @@
 		</div>
 
 		<div class="row text-center">
-			<form class="form-horizontal  text-left">
+			<form method="post" action="?" class="form-horizontal  text-left">
 				<div class="form-group text-left">
    					<label for="name">Name:</label>
-    				<input type="name" class="form-control" id="name" placeholder= "Who will I be communicating with?">
+    				<input name="name" type="name" class="form-control" id="name" placeholder= "Who will I be communicating with?">
   				</div>
   				<div class="form-group text-left">
    					<label for="email">Email:</label>
-    				<input type="email" class="form-control" id="email" placeholder= "What is your email?">
+    				<input name="email" type="email" class="form-control" id="email" placeholder= "What is your email?">
   				</div>
   				<div class="form-group text-left">
-   					<label for="pwd">Subject:</label>
-    				<input type="password" class="form-control" id="pwd" placeholder= "What is your email about?">
+   					<label for="subject">Subject:</label>
+    				<input name="subject" type="text" class="form-control" id="subject" placeholder= "What is your email about?">
   				</div>
   				<div class="form-group text-left">
    					<label for="message">Message:</label>
-    				<!-- <input type="message" class="form-control" id="msg"> -->
-					<textarea id="message" name="message" disabled style="width:100%" placeholder= "Type message here..." ></textarea>	
+					<textarea rows="4" cols="50" id="message" name="message" style="width:100%" placeholder= "Type message here..." ></textarea>	
   				</div>
-  				<button type="submit" class="btn btn-default">Submit</button>
+  				<input id="button" type="submit" value="submit" name="submit">
 			</form>
 		</div>
 		<div class="row text-center">
