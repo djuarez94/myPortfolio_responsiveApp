@@ -1,9 +1,12 @@
 # myPortfolio_responsiveApp
 
-My Positive Quote Machine is a web application that will give the user random positive quotes off a click of a button. It also gives the user the ability to share the quote on their Twitter, and share the Positive Quote Machine to their Facebook account. These positive quotes are some of my favorite quotes from people that are well known through out our history, that I used to keep me motivated.
+This application is my portfolio website. In this appllication the user will be able to see the type of work I have done so far as a student at Mt Sierra College. You can see my Graphic Design work and the softwares that I used when creating my projects. I have also included a page where I present my Web Development (Front- End) skills and the computer languages that I used to create them. A a contact form was also implemented into my site so that the user can send me a message to my email directly.
 
-The languages used for this project are:
+Languages used:
+
 - HTML
 - CSS
 - jQuery
 - Javascript
+- PHP
+- Bootstrap
