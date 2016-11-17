@@ -4,9 +4,9 @@ This application is my portfolio website. In this appllication the user will be 
 
 Languages used:
 
-- HTML
-- CSS
-- jQuery
-- Javascript
-- PHP
-- Bootstrap
+- __HTML__
+- __CSS__
+- __jQuery__
+- __Javascript__
+- __PHP__
+- __Bootstrap__
