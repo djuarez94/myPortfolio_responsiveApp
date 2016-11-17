@@ -62,6 +62,7 @@ if ($_POST) {
 				        	<li class="active"><a id ="about" href="#aboutMe">About Me</a></li>
 				        	<li><a id ="work" href="#myWork">My Work</a></li> 
 				        	<li><a id ="contact" href="#contactMe">Contact Me</a></li> 
+				        	<li><a id ="login" href="login.php">Login</a></li> 
 				     	</ul>
     				</div>
   				</div>
