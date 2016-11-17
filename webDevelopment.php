@@ -1,3 +1,39 @@
+<?php
+	$to = "davidjuarez1411@gmail.com";
+	$subject = "Portfolio Contact";
+
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
+
+	$body = <<<EMAIL
+
+Hi! My name is $name and my subject is $subject.
+
+$message
+
+Sincerely,
+
+$name
+
+P.S. Oh yeah, my email is $email.
+
+EMAIL;
+
+$header = "From: " . $email;
+
+if ($_POST) {
+	if ($name == '' || $email == '' || $subject == '' || $message == '')
+	{
+		$feedback = 'Fill out all the fields';
+	} else {
+		mail($to, $subject, $body, $header);
+		$feedback = 'Hey, this is actually working!';
+	}
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
