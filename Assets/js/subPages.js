@@ -90,7 +90,7 @@ $('.fa-free-code-camp').mouseout(mouseOutFCCIcon);
 /*-------------------------------------
 | Back to Top Button fadeIn & fadeOut
 -------------------------------------*/
-$('.back-to-top').css({'display': 'none'});
+$('.fa-arrow-circle-up').css({'display': 'none'});
 
 var offset = 250;
  
@@ -100,11 +100,11 @@ $(window).scroll(function() {
  
 if ($(this).scrollTop() > offset) {
 
-$('a .back-to-top').fadeIn(duration);
+$('.fa-arrow-circle-up').fadeIn(duration);
 
 } else {
  
-$('a .back-to-top').fadeOut(duration);
+$('.fa-arrow-circle-up').fadeOut(duration);
  
 }
  
@@ -112,7 +112,7 @@ $('a .back-to-top').fadeOut(duration);
  
  
  
-$('a .back-to-top').click(function(event) {
+$('.fa-arrow-circle-up').click(function(event) {
  
 event.preventDefault();
  

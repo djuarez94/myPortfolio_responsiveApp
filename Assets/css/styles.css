@@ -281,6 +281,7 @@ label {
     }
 
 /* Fixed Back to Top Button*/
+
 .back-to-top { 
 background: none; 
 margin: 0; 
@@ -301,6 +302,8 @@ color: #D98E01;
 .back-to-top i {
   font-size: 5em;
 }
+
+/*Form*/
 
 #loginForm2 {
 	background-color: #D98E01;
