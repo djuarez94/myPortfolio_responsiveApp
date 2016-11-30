@@ -11,4 +11,4 @@ Languages used:
 - __PHP__
 - __Bootstrap__
 
-![alt text](http://imgur.com/a/j2ITf "Positive Quote Machine")
+![Positive Quote Machine](http://imgur.com/a/j2ITf)
