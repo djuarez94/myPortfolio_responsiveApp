@@ -10,3 +10,5 @@ Languages used:
 - __Javascript__
 - __PHP__
 - __Bootstrap__
+
+![alt text](http://imgur.com/a/j2ITf "Positive Quote Machine")
