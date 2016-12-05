@@ -11,4 +11,4 @@ Languages used:
 - __PHP__
 - __Bootstrap__
 
-![imgur](http://imgur.com/a/I1aFJ.gif)
+![Imgur](http://i.imgur.com/zULOCqS.gifv)
