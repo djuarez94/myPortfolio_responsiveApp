@@ -12,6 +12,3 @@ Languages used:
 - __Bootstrap__
 
 [Click here to see my website Live!](http://i.imgur.com/zULOCqS.gifv)
-
-![Imgur](http://i.imgur.com/zULOCqS.gif)
-
