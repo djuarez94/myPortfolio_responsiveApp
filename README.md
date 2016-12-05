@@ -11,4 +11,4 @@ Languages used:
 - __PHP__
 - __Bootstrap__
 
-[Imgur](http://i.imgur.com/zULOCqS.gifv)
+[Click here to see my website Live!](http://i.imgur.com/zULOCqS.gifv)
