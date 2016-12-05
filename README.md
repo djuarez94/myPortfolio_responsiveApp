@@ -13,4 +13,3 @@ Languages used:
 
 [Click here to see my website Live!](http://i.imgur.com/zULOCqS.gifv)
 
-[img]http://i.imgur.com/zULOCqS.gif[/img]
