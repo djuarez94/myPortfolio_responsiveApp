@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#secondNav').hide();
-	
+
 	$('h2').animate({opacity : '1'},"slow",dissappearGreet);
 
 	function dissappearGreet () {
@@ -11,4 +11,15 @@ $(document).ready(function() {
 		$('h2').hide();
 		$('h1').show();
 	}
+
+	$("#loginForm2").submit(function( event ) {
+		var answer = confirm("Are you sure you want to delete the user?");
+
+		if (answer == true) {
+		    return;
+		}
+
+		event.preventDefault();
+	});
+
 });

@@ -46,7 +46,7 @@ if ($_POST) {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body>
-		<nav class="navbar navbar-inverse" id="mainNav1">
+		<nav class="navbar navbar-inverse" id="mainNav2">
   				<div class="container-fluid">
    					 <div class="navbar-header">
       					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -60,7 +60,8 @@ if ($_POST) {
 				     	<ul class="nav navbar-nav">
 				        	<li class="active"><a id ="about" href="#aboutMe">About Me</a></li>
 				        	<li><a id ="work" href="#myWork">My Work</a></li> 
-				        	<li><a id ="contact" href="#contactMe">Contact Me</a></li> 
+				        	<li><a id ="contact" href="#contactMe">Contact Me</a></li>
+				        	<li><a id ="login" href="login.php">Login</a></li> 
 				     	</ul>
     				</div>
   				</div>
@@ -110,7 +111,7 @@ if ($_POST) {
 				
 		</div>
 
-		<div class="parallax2 text-center" id="contactMe">
+		<div class="parallax3 text-center" id="contactMe">
 			<h3 id="parallaxTextTitle2">
 				Contact  Me
 			</h3>
@@ -145,10 +146,7 @@ if ($_POST) {
 		<a href='#' class="back-to-top" style="display: inline;">
 			<i class="fa fa-arrow-circle-up"></i>
 		</a>
-
-		
-
-	</body>
+</body>
 
 	<script type="text/javascript" src="Assets/js/jquery-1.11.3.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

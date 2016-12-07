@@ -1,13 +1,22 @@
 <?php
-	$to = "davidjuarez1411@gmail.com";
-	$subject = "Portfolio Contact";
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = $_POST['subject'];
-	$message = $_POST['message'];
+require_once 'cookie_login.php';
 
-	$body = <<<EMAIL
+if ($logged == true) {
+    echo $userArray['username'] . " is logged in";
+} else {
+    echo "User not logged in";
+}
+
+$to = "davidjuarez1411@gmail.com";
+$subject = "Portfolio Contact";
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+$body = <<<EMAIL
 
 Hi! My name is $name and my subject is $subject.
 
@@ -31,6 +40,7 @@ if ($_POST) {
 		mail($to, $subject, $body, $header);
 		$feedback = 'Hey, this is actually working!';
 	}
+
 }
 ?>
 
@@ -40,13 +50,15 @@ if ($_POST) {
   <title>Graphic Design</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="Assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body>
-		<nav class="navbar navbar-inverse" id="mainNav1">
+	
+		<nav class="navbar navbar-inverse" id="mainNav2">
   				<div class="container-fluid">
    					 <div class="navbar-header">
       					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -61,7 +73,8 @@ if ($_POST) {
 				        	<li class="active"><a id ="about" href="#aboutMe">About Me</a></li>
 				        	<li><a id ="work" href="#myWork">My Work</a></li> 
 				        	<li><a id ="contact" href="#contactMe">Contact Me</a></li> 
-				        	<li><a id ="login" href="login.php">Login</a></li> 
+				        	<li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
 				     	</ul>
     				</div>
   				</div>
@@ -181,7 +194,7 @@ if ($_POST) {
 				</div>
 		</div>
 
-		<div class="parallax2 text-center" id="contactMe">
+		<div class="parallax3 text-center" id="contactMe">
 			<h3 id="parallaxTextTitle2">
 				Contact  Me
 			</h3>
