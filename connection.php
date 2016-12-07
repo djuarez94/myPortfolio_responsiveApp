@@ -1,17 +1,17 @@
 <?php 
-$url = getenv('JAWSDB_URL');
-$dbparts = parse_url($url);
+// $url = getenv('JAWSDB_URL');
+// $dbparts = parse_url($url);
 
-$hostname = $dbparts['host'];
-$username = $dbparts['user'];
-$password = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
+// $hostname = $dbparts['host'];
+// $username = $dbparts['user'];
+// $password = $dbparts['pass'];
+// $database = ltrim($dbparts['path'],'/');
 
 
-// $serverName = "localhost";
-// $userName = "root";
-// $password = "root";
-// $dbName = "Juarez Design";
+$serverName = "localhost";
+$userName = "root";
+$password = "root";
+$dbName = "Juarez Design";
 
 $connect = new mysqli($serverName, $userName, $password, $dbName);
 
