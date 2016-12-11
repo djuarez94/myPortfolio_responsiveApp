@@ -8,18 +8,18 @@ require 'error_reporting.php';
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Juarez Design : Login</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="Assets/css/styles.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body id="loginBG">
-		<div class="row text-center" id ="mainNav1" >
-			<a href="index.php"><img src="Assets/img/Logo/topHalf_Logo.png" alt=""></a>
-		</div>
-		<div class="row text-center" id="loginForm">
+		<?php include "nav2.php" ?>
+		<div class="text-center" id="loginForm">
 			<form method="post" action="" id="loginForm2">
 				<ul>
 					<li>
@@ -40,6 +40,9 @@ require 'error_reporting.php';
 				</ul>
 			</form>
 		</div>
+		<div class="text-center">
+			<h4 id="registerQuote">Don't have an account? Register <a href="register.php"><b>here!</b></a></h4>
+		</div>
 		<?php
 			if (isset($_POST['login']) && trim($_POST['login']) != "") {
 	if (isset($_POST['username']) && isset($_POST['password']) && trim($_POST['username']) != "" && trim($_POST['password']) != "") {
@@ -57,13 +60,13 @@ require 'error_reporting.php';
 			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>That username does not exist! Try making <i>$username</i> today at the <a href='register.php'>Sign Up Page</a><h4>");
 		}
 		if ($userArray['password'] != $password) {
-			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Incorrect Password! Please type the password again at the <a href='login.php'>Sign In Page</a><h4>");
+			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Incorrect Password! Please type the password again at the <a href='login.php'>Sign In Page</a></h4>");
 		}
 
 	$salt = hash("sha512", rand() . rand() . rand());
 
-		setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
-		setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
+		// setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
+		// setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
 
 		$userID = $userArray['id'];
 		insert_or_update_info("UPDATE users SET salt='$salt' WHERE id='$userID'");
@@ -72,7 +75,7 @@ require 'error_reporting.php';
     	exit;
 	}
 	else {
-		echo "Please enter Username and Password.";
+		echo "<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Please enter Username and Password.</h4>";
 	}
 }
 		?>

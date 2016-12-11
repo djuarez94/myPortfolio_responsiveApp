@@ -18,6 +18,7 @@ if (isset($_POST['logout']) && trim($_POST['logout']) != '') {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body id="loginBG">
+	<?php include "nav2.php" ?>
 		<div class="row text-center" id="loginForm">
 			<form method="post" action="logout.php" id="loginForm2">
 				<ul>

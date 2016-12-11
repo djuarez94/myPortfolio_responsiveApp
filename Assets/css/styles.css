@@ -7,6 +7,15 @@ body,html {
 	padding-bottom: .5em;
 }
 
+.logo {
+	padding-top: 14%;
+	padding-left: 20%;
+}
+
+#registerQuote {
+	padding-top: 2%;
+}
+
 #mainNav1 {
 	background-color: #1D1E19;
 	padding-bottom: 1em;
@@ -51,7 +60,8 @@ h2 {
 	opacity: 0;
 }
 h3 {
-	margin-bottom: 1em;
+	padding-bottom: 5%;
+
 }
 
 u {
@@ -79,6 +89,15 @@ p {
 	margin-right: auto;
 	font-size: 1.3em;
 	padding-bottom: 1em;
+}
+
+#GDpara {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.3em;
+	padding-bottom: 1em;
+	padding-top: 3%;
 }
 
 #secondNav {
@@ -207,7 +226,24 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 
-    margin-top: -20px;
+    margin-top: 27%;
+   }
+
+.parallax3WD { 
+    /* The image used */
+    background-image: url("../img/bg_image2.jpg");
+    opacity: .75;
+
+    /* Full height */
+    height: 50%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 0%;
    }
 
 #myPhoto {
@@ -255,15 +291,9 @@ nav {
     height: auto; /*this makes sure to maintain the aspect ratio*/
 }
 
-#salmaHayek {
-	padding-left: 0em;
-	padding-right: 0em;
-	padding-bottom: 2em;
-}
-
 form {
-	margin-right: 20em;
-	margin-left: 20em;
+	margin-right: 10%;
+	margin-left: 10%;
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -272,6 +302,11 @@ form {
 	background-color: #D98E01;
 	color: #fff;
 	border: none;
+	font-size: 1.5em;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 
 }
 
@@ -279,9 +314,34 @@ form {
 	padding-bottom: 2em;
 }
 
+.lime {
+	padding-left: 25%;
+}
+
+#salma {
+	padding-left: 25%;
+}
+
+@media only screen and (max-width: 1182px) {
+.lime {
+	padding-left: 25%;
+}
+
+#salma {
+	padding-left: 40%;
+}
+
+}
+
+
 #message {
 	height: 10em;
 	margin-left: 2em;
+}
+
+#GDmessage {
+	height: 10em;
+	
 }
 
 label {
@@ -331,7 +391,7 @@ color: #D98E01;
 
 #loginForm2 {
 	background-color: #D98E01;
-	margin-right: 35%;
+	width: 30%;
 	margin-left: 35%;
 	margin-top: 6%;
 	padding-top: 5em;
@@ -340,9 +400,20 @@ color: #D98E01;
 	box-shadow: 0px 5px 3px #583900;
 }
 
+#deleteForm {
+	background-color: #D98E01;
+	width: 30%;
+	margin-top: 6%;
+	margin-left: 35%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-radius: .5em;
+	box-shadow: 0px 5px 3px #583900;
+}
+
 #updateForm {
 	background-color: #D98E01;
-	margin-right: 35%;
+	width: 30%;
 	margin-left: 35%;
 	margin-top: 4%;
 	padding-top: 2em;
@@ -354,43 +425,58 @@ color: #D98E01;
 
 #registerForm {
 	background-color: #D98E01;
-	margin-right: 35%;
-	margin-left: 35%;
+	width: 30%;
 	margin-top: 5%;
 	padding-top: 3em;
 	padding-bottom: 3em;
+	margin-left: 35%;
+	margin-top: 6%;
 	border-radius: .5em;
 	box-shadow: 0px 5px 3px #583900;
 }
 
 #password {
-	margin-left: 0;
+	margin-left: -2em;
 	border-radius: .2em;
 	border: none;
 	padding: 1%;
 }
 
 #password2 {
-	margin-right: .75em;
+	margin-right: 1.5em;
 	color: #583900;
 	font-size: 2em;
 }
 
 #username {
-	margin-left: 0;
+	margin-left: -2em;
 	border-radius: .2em;
 	border: none;
 	padding: 1%;
 }
 
 #username2 {
-	margin-right: .75em;
+	margin-right: 1.3em;
 	color: #583900;
 	font-size: 2em;
 }
 
+#submit_delete {
+	margin-right: 2.5em;
+	background-color: #fff;
+	border: none;
+	border-radius: .2em;
+	color: #D98E01;
+	font-size: 1.3em;
+	margin-top: 5%;
+}
+#submit_delete:hover {
+	background-color: #583900;
+	color: #FFF7CD;	
+}
+
 #submit2 {
-	margin-right: 3.7em;
+	margin-right: 2em;
 	background-color: #fff;
 	border: none;
 	border-radius: .2em;
@@ -403,9 +489,18 @@ color: #D98E01;
 	background-color: #583900;
 	color: #FFF7CD;	
 }
-
+@media only screen and (max-width: 1026px) {
+	#registerForm {
+		width: 40%;
+		margin-left: 30%;
+	}
+	#loginForm2 {
+		width: 40%
+		margin-left: 30%;
+	}
+}
 #registerBtn {
-	margin-right: 3.7em;
+	margin-right: 2em;
 	background-color: #fff;
 	border: none;
 	border-radius: .2em;
@@ -428,10 +523,257 @@ ul {
 }
 
 #name2 {
-	margin-left: 0em;
+	margin-left: -2em;
 }
 /* PHP Alert CSS */
 .alert {
 	color: red;
 }
 
+#WDform {
+	margin-left: 8%;
+}
+
+/* Responsive Media Queries CSS */
+@media only screen and (max-width: 1096px) {
+#salma {
+	padding-left: 44%;
+}
+
+}
+
+@media only screen and (max-width: 991px) {
+.lime {
+	padding-left: 0%;
+}
+
+#salma {
+	padding-left: 0%;
+	padding-bottom: 3.5%;
+}
+
+#deleteForm {
+	width: 40%;
+	margin-left: 30%;
+}
+
+#updateForm {
+	width: 50%;
+	margin-left: 25%;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+#registerForm {
+		width: 50%;
+		margin-left: 25%;
+}
+
+#loginForm2 {
+		width: 50%;
+		margin-left: 25%;
+}
+
+#updateForm {
+
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;  
+}
+
+.lime {
+	padding-left: 0%;
+}
+
+#salma {
+	padding-left: 0%;
+	padding-bottom: 10%;
+	width: 30%;
+}
+
+.logo {
+    display: none;
+}
+
+#button{
+	background-color: #D98E01;
+	color: #fff;
+	border: none;
+	font-size: 1.5em;
+	padding: 2%;
+	margin-left: 5%;
+
+}
+#WD {
+	font-size: 1.3em;
+	padding-top: 1.2em;
+	padding-bottom: 1.4em;
+}
+
+#GD {
+	font-size: 1.3em;
+	padding-top: 1.2em;
+	padding-bottom: 1.4em;
+}
+
+#secondNav2 a {
+	line-height: 1.5em;
+}
+
+.GDpara {
+	text-align: center;
+}
+
+.back-to-top {
+	opacity: .7;
+}
+
+.back-to-top:hover {
+	opacity: 1;
+}
+
+.photo img {
+	width: 50%;
+}
+
+#WDform {
+	margin-right: 20%;
+	margin-left: 15%;
+}
+
+#parallaxTextTitle {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+}
+
+@media only screen and (max-width: 604px) {
+	#deleteForm {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 10%;
+	}
+}
+
+@media only screen and (max-width: 489px) {
+#registerForm {
+	width: 65%;
+	margin-left: 17%;
+	margin-top: 15%;
+}
+
+#loginForm2 {
+		width: 70%;
+		margin-left: 15%;
+		margin-top: 15%;
+}
+
+@media only screen and (max-width: 417px) {
+#registerForm {
+	width: 80%;
+	margin-left: 10%;
+}
+#deleteForm {
+	width: 80%;
+	margin-left: 10%;
+}
+#updateForm {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+#WD {
+	font-size: 1.3em;
+	padding-top: 1.2em;
+	padding-bottom: 1.4em;
+}
+
+#GD {
+	font-size: 1.3em;
+	padding-top: 1.2em;
+	padding-bottom: 1.4em;
+}
+
+h3 {
+	padding-bottom: 5%;
+	margin-bottom: 3em;
+}
+
+#button{
+	background-color: #D98E01;
+	color: #fff;
+	border: none;
+	font-size: 1.5em;
+	padding: 2%;
+	margin-left: 5%;
+
+}
+
+.photo img {
+	width: 100%;
+}
+
+#salma {
+	width: 50%;
+}
+
+}
+
+@media only screen and (max-width: 410px) {
+#WD {
+	font-size: 1.1em;
+	padding-top: 1.7em;
+	padding-bottom: 1.5em;
+}
+
+#GD {
+	font-size: 1.1em;
+	padding-top: 1.7em;
+	padding-bottom: 1.5em;
+}
+#secondNav2 a {
+	line-height: 2em;
+}
+
+#parallaxTextTitle {
+	padding-left: 8%;
+	padding-top: 60%;
+	padding-right: 10%;
+	font-size: 3.2em;
+}
+}
+
+@media only screen and (max-width: 340px) {
+#myPhoto {
+	width: 200px;
+}
+
+#GDpara {
+	padding-top: 10%;
+}
+
+.back-to-top i {
+  font-size: 4em;
+}
+
+.back-to-top {
+	bottom: 0; 
+	padding-left: 15%;
+}
+
+#WDform {
+	margin-right: 23%;
+	margin-left: 15%;
+}
+
+#parallaxTextTitle2 {
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top: 33%;
+}
+
+}

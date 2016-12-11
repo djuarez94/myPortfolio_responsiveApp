@@ -5,44 +5,48 @@ require 'error_reporting.php';
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Juarez Design : Login</title>
+  <title>Update User</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="Assets/css/styles.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 	<body id="loginBG">
-		<div class="row text-center" id ="mainNav1" >
-			<a href="index.php"><img src="Assets/img/Logo/topHalf_Logo.png" alt=""></a>
-		</div>
-		<div class="row text-center" >
+		<?php include "nav2.php" ?>
+		<div class="text-center" >
 			<form method="post" action="" id="updateForm">
 				<ul>
 					<li>
 						<label for="old_username">Enter Existing Username</label>
-						<input id="old_username" type="text" name="old_username" value="" />
+						<br>
+						<input placeholder="Existing Username" id="old_username" type="text" name="old_username" value="" />
 					</li>
 					<li>
 						<label for="old_password">Enter Existing Password</label>
-						<input id="old_password" type="password" name="old_password" value="" />
+						<br>
+						<input placeholder="Existing Password" id="old_password" type="password" name="old_password" value="" />
 					</li>
 					<li>
 						<label for="new_username">Enter New Username</label>
-						<input id="new_username" type="text" name="new_username" value="" />
+						<br>
+						<input placeholder="New Username" id="new_username" type="text" name="new_username" value="" />
 					</li>
 					<li>
 						<label for="new_password">Enter New Password</label>
-						<input id="new_password" type="password" name="new_password" value=""/>
+						<br>
+						<input placeholder="New Password" id="new_password" type="password" name="new_password" value=""/>
 					</li>
 					<li>
 						<label for="new_name">Enter New Name</label>
 						<br>
-						<input id="new_name" type="text" name="new_name" value=""/>
+						<input placeholder="New Name" id="new_name" type="text" name="new_name" value=""/>
 					</li>
 					<br>
 					<li>
-						<input id='submit2' type="submit" name="update" value="Update">
+						<input placeholder="Existing Password" id='submit2' type="submit" name="update" value="Update">
 					</li>
 				</ul>
 			</form>

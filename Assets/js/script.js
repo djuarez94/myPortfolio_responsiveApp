@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$('h1').show();
 	}
 
-	$("#loginForm2").submit(function( event ) {
+	$("#loginForm2D").submit(function( event ) {
 		var answer = confirm("Are you sure you want to delete the user?");
 
 		if (answer == true) {
