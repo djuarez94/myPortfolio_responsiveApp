@@ -19,7 +19,7 @@
 			</div>
 
 		<div>
-			<a href="webDevelopment.php"><h1 id="GDbox">Graphic Design</h1></a>
+			<a href="graphicDesign.php"><h1 id="GDbox">Graphic Design</h1></a>
 		</div>
 
 		<div>
