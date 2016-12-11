@@ -9,23 +9,20 @@
 </head>
 	<body>
 
-			<div class="row text-center" id ="mainNav1" >
+			<div class="text-center" id ="mainNav1" >
 				<a href="index.php"><img src="Assets/img/Logo/topHalf_Logo.png" alt=""></a>
 			</div>
-			<!-- <div class="row text-center" id ="secondNav2">
-				<a id="GD" href="graphicDesign.php">Graphic Design</a>
-				<a id="WD" href="webDevelopment.php">Web Development</a>
-			</div> -->
 
-			<div class="row text-center" id="greeting">
+
+			<div class="text-center" id="greeting">
 				<h2>Where Design </br> and Development meet!</h2>
 			</div>
 
-		<div class="row">
+		<div>
 			<a href="graphicDesign.php"><h1 id="GDbox">Graphic Design</h1></a>
 		</div>
 
-		<div class="row">
+		<div>
 			<a href="webDevelopment.php"><h1 id="WDbox">Web Development</h1></a>
 		</div>	
 		<div class="target1"></div>
