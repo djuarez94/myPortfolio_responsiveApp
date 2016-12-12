@@ -20,9 +20,9 @@ function scrollContact () {
         'slow');
 }
 
-$("li #about").click(scrollMe);
-$("li #work").click(scrollWork);
-$("li #contact").click(scrollContact);
+$(".about").click(scrollMe);
+$(".work").click(scrollWork);
+$(".contact").click(scrollContact);
 
 /*-------------------------------------
 | IMAGE FADE WHEN SCROLLING

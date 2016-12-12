@@ -46,12 +46,8 @@ if ($_POST) {
 </head>
 	<body>
 		
+<?php include "nav2.php" ?>
 <?php include "nav.php" ?>
-
-			<div class="text-center" id ="secondNav2">
-				<a id="GD" href="graphicDesign.php">Graphic Design</a>
-				<a class='active1' id="WD" href="webDevelopment.php">Web Development</a>
-			</div>
 		<div class="parallax text-center">
 			<h3 id="parallaxTextTitle">
 				Web Development

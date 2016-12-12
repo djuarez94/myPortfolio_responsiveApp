@@ -41,7 +41,7 @@ require 'error_reporting.php';
 			</form>
 		</div>
 		<div class="text-center">
-			<h4 id="registerQuote">Don't have an account? Register <a href="register.php"><b>here!</b></a></h4>
+			<h4 id="registerQuote">Don't have an account? Sign up <a href="register.php"><b>here!</b></a></h4>
 		</div>
 		<?php
 			if (isset($_POST['login']) && trim($_POST['login']) != "") {
@@ -57,16 +57,16 @@ require 'error_reporting.php';
 
 
 		if (count($userArray) <= 0) {
-			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>That username does not exist! Try making <i>$username</i> today at the <a href='register.php'>Sign Up Page</a><h4>");
+			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>That username does not exist! Try making <u>$username</u> today by signing up <a href='register.php'>here!</a><h4>");
 		}
 		if ($userArray['password'] != $password) {
-			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Incorrect Password! Please type the password again at the <a href='login.php'>Sign In Page</a></h4>");
+			die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Incorrect Password! Please retype password and username.");
 		}
 
 	$salt = hash("sha512", rand() . rand() . rand());
 
-		// setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
-		// setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
+		setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
+		setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
 
 		$userID = $userArray['id'];
 		insert_or_update_info("UPDATE users SET salt='$salt' WHERE id='$userID'");

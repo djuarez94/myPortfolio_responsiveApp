@@ -65,25 +65,23 @@ require 'error_reporting.php';
         $userArray = $check->fetch_assoc();
 
         if (count($userArray) > 0) {
-           die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>That username already exists! Try creating another username. 
-                       <a href='register.php'>Back</a><h4>");
+           die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>That username already exists! Try creating another username.");
         }
         if (!ctype_alnum($username)) {
-         die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Username contains special characters! Only numbers and letters are permitted. <a href='register.php'>Back</a><h4>" );
+         die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Username contains special characters! Only numbers and letters are permitted." );
         }
         if (strlen($username) > 20) {
-      die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Username must contain less than 20 characters. <a href='register.php'>Back</a><h4>" );
+      die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Username must contain less than 20 characters." );
         }
 
         if (strlen($username) < 5) {
-            die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Username must contain at least 6 characters. 
-                       <a href='register.php'>Back</a><h4>" );
+            die("<h4 style='color: red; padding-top: 2%; padding-left: 1%; padding-right: 1%;' class='text-center'>Username must contain at least 6 characters." );
         }
 
         $salt = hash("sha512", rand() . rand() . rand());
 
-        // setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
-        // setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
+        setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
+        setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
 
         insert_or_update_info("INSERT INTO users (username, password, name, salt) 
             VALUES ('$username', '$password', '$name', '$salt')");
