@@ -4,14 +4,14 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-      <span class="icon-bar"></span> 
+      <span class="icon-bar"></span>
       </button>
       <a href="index.php"><img class="logo" src="Assets/img/Logo/topHalf_Logo.png" alt=""></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav"> 
+      <ul class="nav navbar-nav">
         <li><a id ="about" class ="design" href="graphicDesign.php">Design</a></li>
-        <li><a id ="about" href="webDevelopment.php">Development</a></li>
+        <li><a id ="about" href="webDevelopment.php">Web Development</a></li>
           <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> My Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
