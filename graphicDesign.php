@@ -1,6 +1,6 @@
 <?php
 
-require_once 'cookie_login.php';
+// require_once 'cookie_login.php';
 
 // if ($logged == true) {
 //     echo $userArray['username'] . " is logged in";
@@ -58,7 +58,7 @@ if ($_POST) {
 </head>
 
 	<body>
-	
+
 <?php include "nav2.php" ?>
 <?php include "nav.php" ?>
 		<div class="parallax text-center">
@@ -74,13 +74,13 @@ if ($_POST) {
 				</h3>
 				<h3>
 					Graphic Designer
-					<br>&<br> 
+					<br>&<br>
 					Web Developer
 				</h3>
 
 				<p class="star" id="GDpara">
 					Welcome! I am David, and I am beginning my senior year at Mt. Sierra College where I am persuing my Bachelor's Degree in Graphic Design. What made me go down the road of a Graphic Designer was my love for drawing. I began drawing from a young age and this eventually evolved into becoming a hobby that I love to do. Now I want to use my passion for drawing in order to communicate with others visually through my work.
-				</p>										
+				</p>
 			</div>
 		</div>
 		<div class="parallax2 text-center" id="myWork">
@@ -194,7 +194,7 @@ if ($_POST) {
   				</div>
   				<div class="form-group text-left">
    					<label for="message">Message:</label>
-					<textarea rows="4" cols="50" id="GDmessage" name="message" style="width:100%" placeholder= "Type message here..." ></textarea>	
+					<textarea rows="4" cols="50" id="GDmessage" name="message" style="width:100%" placeholder= "Type message here..." ></textarea>
   				</div>
   				<input id="button" type="submit" value="Submit" name="submit">
 			</form>
@@ -211,7 +211,7 @@ if ($_POST) {
 
 	<script src="Assets/js/subPages.js"></script>
 	<script src="Assets/js/jquery-3.1.1.min.js"></script>
-	
+
 </html>
 
 
