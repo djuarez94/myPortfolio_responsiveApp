@@ -23,9 +23,10 @@ if (isset($_POST['logout']) && trim($_POST['logout']) != '') {
 	<?php include "nav2.php" ?>
 		<div class="row text-center" id="loginForm">
 			<form method="post" action="logout.php" id="loginForm2">
+			<h3 class="logoutQuest">Are you sure you want to Logout?</h3>
 				<ul>
 					<li>
-						<input type="submit" name="logout" value="Logout">
+						<input id='submit2' type="submit" name="logout" value="Logout">
 					</li>
 				</ul>
 			</form>

@@ -121,6 +121,15 @@ $('html, body').animate({scrollTop: 0}, duration);
 return false;
  
 })
+
+/*-------------------------------------
+| Main Nav Active State
+-------------------------------------*/
+ $('li a').click(function() {
  
+$('#about.').css("background-color", "yellow");
+ 
+})
+
 
 });

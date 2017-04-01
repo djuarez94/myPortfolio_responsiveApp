@@ -39,7 +39,7 @@ require 'error_reporting.php';
           </li>
             </br>
           <li>
-            <input id ="registerBtn" type="submit" name="register" value="Register">
+            <input id ="registerBtn" type="submit" name="register" value="Sign Up">
           </li>
         </ul>
       </form>

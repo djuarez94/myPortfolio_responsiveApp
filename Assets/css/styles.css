@@ -3,6 +3,12 @@ body,html {
 	height: 100%;
 }
 
+.logoutQuest {
+	padding-left: 3%;
+	padding-right: 3%;
+	line-height: 1.25em;
+}
+
 #socialIcons {
 	padding-bottom: .5em;
 }
@@ -97,7 +103,7 @@ p {
 	margin-right: auto;
 	font-size: 1.3em;
 	padding-bottom: 1em;
-	padding-top: 3%;
+	padding-top: 0%;
 }
 
 #secondNav {

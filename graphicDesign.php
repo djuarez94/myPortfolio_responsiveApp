@@ -2,11 +2,11 @@
 
 require_once 'cookie_login.php';
 
-if ($logged == true) {
-    echo $userArray['username'] . " is logged in";
-} else {
-    echo "User not logged in";
-}
+// if ($logged == true) {
+//     echo $userArray['username'] . " is logged in";
+// } else {
+//     echo "User not logged in";
+// }
 
 $to = "davidjuarez1411@gmail.com";
 $subject = "Portfolio Contact";
