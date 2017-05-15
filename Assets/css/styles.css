@@ -3,6 +3,12 @@ body,html {
 	height: 100%;
 }
 
+footer {
+	padding: 15px;
+	background-color: #000;
+	text-align: center;
+}
+
 .logoutQuest {
 	padding-left: 3%;
 	padding-right: 3%;
@@ -123,7 +129,7 @@ p {
 
 #secondNav2 a {
 	line-height: 1.25em;
-} 
+}
 
 #WD {
 	color: #000;
@@ -151,7 +157,7 @@ h1:hover {
 
 nav {
 	padding-bottom: 0em;
-	
+
 }
 
 #GD {
@@ -165,7 +171,7 @@ nav {
 
 .navbar .navbar-nav {
     display: inline-block;
-    float: right;  
+    float: right;
 }
 
 .navbar .navbar-nav li a {
@@ -185,14 +191,14 @@ nav {
 
 /*graphicDesign.php CSS & Parallax Effect*/
 
-.parallax { 
+.parallax {
     /* The image used */
     background-image: url("../img/BG_1.jpg");
     opacity: .75;
 
     /* Full height */
     /*height: 61.5%; */
-    height: 90%; 
+    height: 90%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -201,13 +207,13 @@ nav {
     background-size: cover;
    }
 
-.parallax2 { 
+.parallax2 {
     /* The image used */
     background-image: url("../img/bg_image1.jpg");
     opacity: .75;
 
     /* Full height */
-    height: 50%; 
+    height: 50%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -218,13 +224,13 @@ nav {
     margin-top: -20px;
    }
 
-.parallax3 { 
+.parallax3 {
     /* The image used */
     background-image: url("../img/bg_image2.jpg");
     opacity: .75;
 
     /* Full height */
-    height: 50%; 
+    height: 50%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -235,13 +241,13 @@ nav {
     margin-top: 27%;
    }
 
-.parallax3WD { 
+.parallax3WD {
     /* The image used */
     background-image: url("../img/bg_image2.jpg");
     opacity: .75;
 
     /* Full height */
-    height: 50%; 
+    height: 50%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -347,11 +353,70 @@ form {
 
 #GDmessage {
 	height: 10em;
-	
+
 }
 
 label {
 	font-size: 1.25em;
+}
+/*-------------------------------------
+| Phone Email Contact
+-------------------------------------*/
+div.email a{
+   font-size: 1em;
+   color: #fff;
+   text-align: center;
+   display: inline-block;
+   margin-top: 1em;
+}
+
+div.email p {
+   padding-left: 10px;
+}
+
+div.number p {
+   padding-left: 10px;
+}
+
+div.number a {
+   color: #fff;
+   display: inline-block;
+}
+
+div.number a:hover {
+   color: #f8792c;
+   text-decoration: none;
+}
+
+div.number a:hover {
+   color: #f8792c;
+   text-decoration: none;
+}
+
+div.number {
+   font-size: 1em;
+   color: #fff;
+   text-align: center;
+
+   margin-top: 1em;
+}
+
+div.number i {
+   margin-bottom: .4em;
+}
+
+div.email i {
+   margin-bottom: .5em;
+   color: #fff;
+}
+
+.contact {
+   /*background-color: red;*/
+   width: 70%;
+   text-align: center;
+   margin: auto;
+   margin-top: 2em;
+   margin-bottom: 2em;
 }
 
 /* FADE IN WHEN SCROLLNG EFFEC*/
@@ -372,23 +437,23 @@ label {
 
 /* Fixed Back to Top Button*/
 
-.back-to-top { 
-background: none; 
-margin: 0; 
+.back-to-top {
+background: none;
+margin: 0;
 margin-bottom: 3em;
 margin-right: 3em;
-position: fixed; 
-bottom: 0; 
-right: 0; 
-width: 70px; 
-height: 70px; 
-z-index: 100; 
-display: none; 
-text-decoration: none; 
-color: #D98E01; 
+position: fixed;
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #D98E01;
 
 }
-  
+
 .back-to-top i {
   font-size: 5em;
 }
@@ -478,7 +543,7 @@ color: #D98E01;
 }
 #submit_delete:hover {
 	background-color: #583900;
-	color: #FFF7CD;	
+	color: #FFF7CD;
 }
 
 #submit2 {
@@ -493,7 +558,7 @@ color: #D98E01;
 
 #submit2:hover {
 	background-color: #583900;
-	color: #FFF7CD;	
+	color: #FFF7CD;
 }
 @media only screen and (max-width: 1026px) {
 	#registerForm {
@@ -517,7 +582,7 @@ color: #D98E01;
 
 #registerBtn:hover {
 	background-color: #583900;
-	color: #FFF7CD;	
+	color: #FFF7CD;
 }
 
 #loginBG {
@@ -587,7 +652,7 @@ ul {
 
 .navbar .navbar-nav {
     display: inline-block;
-    float: none;  
+    float: none;
 }
 
 .lime {
@@ -767,7 +832,7 @@ h3 {
 }
 
 .back-to-top {
-	bottom: 0; 
+	bottom: 0;
 	padding-left: 15%;
 }
 
