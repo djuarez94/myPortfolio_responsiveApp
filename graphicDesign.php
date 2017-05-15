@@ -1,6 +1,6 @@
 <?php
 
-require_once 'cookie_login.php';
+// require_once 'cookie_login.php';
 
 // if ($logged == true) {
 //     echo $userArray['username'] . " is logged in";
