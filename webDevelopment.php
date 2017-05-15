@@ -116,11 +116,21 @@ if ($_POST) {
   				<input id="button" type="submit" value="Submit" name="submit">
 			</form>
 		</div>
-		<div class="text-center">
-			<a href="https://www.linkedin.com/in/david-juarez-915270117" target="_blank"><i id='socialIcons' class="fa fa-linkedin-square" style="color:#83848B; font-size: 3em; opacity: .5;"></i></a>
-			<a href="https://www.freecodecamp.com/djuarez94" target="_blank"><i id='socialIcons' class="fa fa-free-code-camp" aria-hidden="true" style="padding-right: .25em; padding-left: .25em; color:#83848B; font-size: 3em; opacity: .5;"></i></a>
-			<a href="https://github.com/djuarez94" target="_blank"><i id='socialIcons' class="fa fa-github-square" style="font-size:3em; color:#83848B; opacity: .5;"></i></a>
-		</div>
+		<footer>
+			<div class="email">
+				<i class="fa fa-envelope" aria-hidden="true" style="font-size: 2em;"></i>
+				<a href="mailto:davidjuarez1411@gmail.com"><p>davidjuarez1411@gmail.com</p></a>
+			</div>
+			<div class="number">
+				<i class="fa fa-mobile" aria-hidden="true" style="font-size: 2.5em;"></i>
+				<a href="tel:1-626-257-8499"><p>626.257.8499</p></a>
+			</div>
+			<div class="text-center">
+				<a href="https://www.linkedin.com/in/david-juarez-915270117" target="_blank" ><i id='socialIcons' class="fa fa-linkedin-square" style="color:#fff; font-size: 3em; opacity: .5;"></i></a>
+				<a href="https://www.freecodecamp.com/djuarez94" target="_blank" ><i id='socialIcons' class="fa fa-free-code-camp" aria-hidden="true" style="padding-right: .25em; padding-left: .25em; color:#fff; font-size: 3em; opacity: .5;"></i></a>
+				<a href="https://github.com/djuarez94" target="_blank" ><i id='socialIcons' class="fa fa-github-square" style="font-size:3em; color:#fff; opacity: .5;"></i></a>
+			</div>
+		</footer>
 		<a href='#' class="back-to-top" style="display: inline;">
 			<i class="fa fa-arrow-circle-up"></i>
 		</a>
