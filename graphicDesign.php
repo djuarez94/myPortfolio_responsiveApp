@@ -2,11 +2,11 @@
 
 require_once 'cookie_login.php';
 
-if ($logged == true) {
-    echo $userArray['username'] . " is logged in";
-} else {
-    echo "User not logged in";
-}
+// if ($logged == true) {
+//     echo $userArray['username'] . " is logged in";
+// } else {
+//     echo "User not logged in";
+// }
 
 $to = "davidjuarez1411@gmail.com";
 $subject = "Portfolio Contact";
@@ -33,14 +33,13 @@ EMAIL;
 $header = "From: " . $email;
 
 if ($_POST) {
-	if ($name == '' || $email == '' || $subject == '' || $message == '')
-	{
-		$feedback = 'Fill out all the fields';
-	} else {
-		mail($to, $subject, $body, $header);
-		$feedback = 'Hey, this is actually working!';
-	}
-
+if ($name == '' || $email == '' || $subject == '' || $message == '')
+{
+	$feedback = 'Fill out all the fields';
+} else {
+	mail($to, $subject, $body, $header);
+	$feedback = 'Hey, this is actually working!';
+}
 }
 ?>
 

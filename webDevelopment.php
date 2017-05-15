@@ -1,13 +1,13 @@
 <?php
-	$to = "davidjuarez1411@gmail.com";
-	$subject = "Portfolio Contact";
+$to = "davidjuarez1411@gmail.com";
+$subject = "Portfolio Contact";
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = $_POST['subject'];
-	$message = $_POST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
-	$body = <<<EMAIL
+$body = <<<EMAIL
 
 Hi! My name is $name and my subject is $subject.
 
@@ -45,7 +45,7 @@ if ($_POST) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 	<body>
-		
+
 <?php include "nav2.php" ?>
 <?php include "nav.php" ?>
 		<div class="parallax text-center">
@@ -62,13 +62,13 @@ if ($_POST) {
 
 				<h3>
 					Graphic Designer
-					</br>&</br> 
+					</br>&</br>
 					Web Developer
 				</h3>
 
 				<p class="star">
 					My time at Mt. Sierra College has also introduced me to web design and computer programming. Ever since I got my hands wet in the design and programming fields, I have become increasingly attached to my work. I have a constant thirst to learn as much as I can about computer programming/web design.
-				</p>										
+				</p>
 			</div>
 		</div>
 
@@ -86,7 +86,7 @@ if ($_POST) {
 				<div class="text-center star" id="workImages">
 					<a href="https://djuarez94.github.io/randomQuoteMachine/"><img src="Assets/img/frontEndProj/positivequotemachine_ss-u75197-fr.jpg" alt=""></a>
 				</div>
-				
+
 		</div>
 
 		<div class="parallax3WD text-center" id="contactMe">
@@ -111,7 +111,7 @@ if ($_POST) {
   				</div>
   				<div class="form-group text-left">
    					<label for="message">Message:</label>
-					<textarea rows="4" cols="50" id="message" name="message" style="width:100%" placeholder= "Type message here..." ></textarea>	
+					<textarea rows="4" cols="50" id="message" name="message" style="width:100%" placeholder= "Type message here..." ></textarea>
   				</div>
   				<input id="button" type="submit" value="Submit" name="submit">
 			</form>
