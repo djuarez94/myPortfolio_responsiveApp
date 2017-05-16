@@ -9,6 +9,10 @@ footer {
 	text-align: center;
 }
 
+.navbar-inverse {
+	border-radius: 0;
+}
+
 .logoutQuest {
 	padding-left: 3%;
 	padding-right: 3%;

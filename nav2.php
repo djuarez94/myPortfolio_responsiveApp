@@ -12,7 +12,7 @@
       <ul class="nav navbar-nav">
         <li><a id ="about" class ="design" href="graphicDesign.php">Design</a></li>
         <li><a id ="about" href="webDevelopment.php">Web Development</a></li>
-          <li class="dropdown">
+          <!-- <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> My Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="register.php">Sign Up</a></li>
@@ -20,7 +20,7 @@
             <li><a href="delete.php">Delete Account</a></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
