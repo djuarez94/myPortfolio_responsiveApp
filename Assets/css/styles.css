@@ -353,7 +353,7 @@ form {
 
 #GDmessage {
 	height: 10em;
-
+	margin-left: 2em;
 }
 
 label {
@@ -419,7 +419,7 @@ div.email i {
    margin-bottom: 2em;
 }
 
-/* FADE IN WHEN SCROLLNG EFFEC*/
+/* FADE IN WHEN SCROLLNG EFFECT */
 	.star {
         visibility: hidden;
     }

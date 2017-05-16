@@ -42,7 +42,6 @@ if ($name == '' || $email == '' || $subject == '' || $message == '')
 }
 }
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -53,7 +52,6 @@ if ($name == '' || $email == '' || $subject == '' || $message == '')
   <link rel="stylesheet" href="Assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 	<body>
 
 <?php include "nav2.php" ?>
@@ -216,15 +214,15 @@ if ($name == '' || $email == '' || $subject == '' || $message == '')
 		</a>
 	</body>
 
-	<script src="Assets/js/subPages.js"></script>
+	<!-- <script src="Assets/js/subPages.js"></script>
 	<script src="Assets/js/jquery-3.1.1.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="Assets/js/subPages.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
-
-
-

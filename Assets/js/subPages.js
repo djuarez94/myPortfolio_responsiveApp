@@ -93,43 +93,34 @@ $('.fa-free-code-camp').mouseout(mouseOutFCCIcon);
 $('.fa-arrow-circle-up').css({'display': 'none'});
 
 var offset = 250;
- 
+
 var duration = 300;
- 
+
 $(window).scroll(function() {
- 
+
 if ($(this).scrollTop() > offset) {
 
 $('.fa-arrow-circle-up').fadeIn(duration);
 
 } else {
- 
-$('.fa-arrow-circle-up').fadeOut(duration);
- 
-}
- 
-});
- 
- 
- 
-$('.fa-arrow-circle-up').click(function(event) {
- 
-event.preventDefault();
- 
-$('html, body').animate({scrollTop: 0}, duration);
- 
-return false;
- 
-})
 
-/*-------------------------------------
-| Main Nav Active State
--------------------------------------*/
- $('li a').click(function() {
- 
-$('#about.').css("background-color", "yellow");
- 
-})
+$('.fa-arrow-circle-up').fadeOut(duration);
+
+}
+
+});
+
+
+
+$('.fa-arrow-circle-up').click(function(event) {
+
+event.preventDefault();
+
+$('html, body').animate({scrollTop: 0}, duration);
+
+return false;
+
+});
 
 
 });
