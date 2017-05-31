@@ -8,6 +8,8 @@
 //     echo "User not logged in";
 // }
 
+$feedback =''; //empty until there is feedback.
+
 if (isset($_POST['name']))
 {
 	/*-------------------------------------
@@ -198,8 +200,14 @@ if (isset($_POST['name']))
 			</h3>
 		</div>
 
-		<div class="text-center">
-			<form method="post" action="?" class="form-horizontal  text-left">
+		<?php if (!empty($feedback)) : ?>
+			<div class="alert alert-info">
+				<?php echo $feedback; ?>
+			</div>
+		<?php endif; ?>
+
+		<div id="contactMe" class="text-center">
+			<form method="post" action="graphicDesign.php#contactMe" class="form-horizontal  text-left">
 				<div class="form-group text-left">
    					<label for="name">Name:</label>
     				<input name="name" type="name" class="form-control" id="name" placeholder= "Who will I be communicating with?">
