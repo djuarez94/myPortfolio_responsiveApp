@@ -1,45 +1,70 @@
 <?php
 
-// require_once 'cookie_login.php';
+require_once 'cookie_login.php';
 
-// if ($logged == true) {
-//     echo $userArray['username'] . " is logged in";
-// } else {
-//     echo "User not logged in";
-// }
-
-// $to = "davidjuarez1411@gmail.com";
-// $subject = "Portfolio Contact";
-//
-// $name = $_POST['name'];
-// $email = $_POST['email'];
-// $subject = $_POST['subject'];
-// $message = $_POST['message'];
-//
-// $body = <<<EMAIL
-//
-// Hi! My name is $name and my subject is $subject.
-//
-// $message
-//
-// Sincerely,
-//
-// $name
-//
-// P.S. Oh yeah, my email is $email.
-//
-// EMAIL;
-//
-// $header = "From: " . $email;
-
-if ($_POST) {
-if ($name == '' || $email == '' || $subject == '' || $message == '')
-{
-	$feedback = 'Fill out all the fields';
+if ($logged == true) {
+    echo $userArray['username'] . " is logged in";
 } else {
-	mail($to, $subject, $body, $header);
-	$feedback = 'Hey, this is actually working!';
+    echo "User not logged in";
 }
+
+if ($_POST['name'])
+{
+	/*-------------------------------------
+	| Initialize Variables
+	-------------------------------------*/
+	$to = "davidjuarez1411@gmail.com";
+	$subject = "Portfolio Contact";
+
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
+
+	/*-------------------------------------
+	| Validation
+	-------------------------------------*/
+	if ($name == '' || $email == '' || $subject == '' || $message == '')
+	{
+		$feedback = 'Fill out all the fields';
+	}
+	else
+	{
+		/*-------------------------------------
+		| Compose
+		-------------------------------------*/
+		$body = '
+			Hi! My name is ' . $name . ' and my subject is  . ' $subject . '. <br><br>
+
+			' . $message . '<br>
+
+			Sincerely,<br>
+			' . $name . '<br>
+			P.S. Oh yeah, my email is ' . $email . '.
+		';
+
+		/*-------------------------------------
+		| Make it look like a real eamil
+		-------------------------------------*/
+		$headers = "From: davidjuarez1411@gmail.com" . "\r\n";
+		$headers .= "Reply-To: ". strip_tags($_POST['req-email']) . "\r\n";
+		// $headers .= "CC: susan@example.com\r\n";
+		$headers .= "MIME-Version: 1.0\r\n";
+		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+
+		/*-------------------------------------
+		| Send the email
+		-------------------------------------*/
+		if (!mail($to, $subject, $body, $headers))
+		{
+			$feedback = 'We were unable to send from our hosted server.';
+		}
+		else
+		{
+			$feedback = 'Message Sent from our servers. Let\'s hope it gets through the mail servers!';
+		}
+	}
 }
 ?>
 <!doctype html>
