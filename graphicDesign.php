@@ -8,7 +8,7 @@ if ($logged == true) {
     echo "User not logged in";
 }
 
-if ($_POST['name'])
+if (isset($_POST['name']))
 {
 	/*-------------------------------------
 	| Initialize Variables
@@ -34,7 +34,7 @@ if ($_POST['name'])
 		| Compose
 		-------------------------------------*/
 		$body = '
-			Hi! My name is ' . $name . ' and my subject is  . ' $subject . '. <br><br>
+			Hi! My name is ' . $name . ' and my subject is  ' . $subject . '. <br><br>
 
 			' . $message . '<br>
 
